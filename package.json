@@ -1,6 +1,6 @@
 {
   "name": "@21st-digital/eslint-config",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "21st digital's ESLint config with Prettier support",
   "main": "index.js",
   "scripts": {
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/21stdigital/eslint-config-21st-react.git"
+    "url": "git+https://github.com/21stdigital/eslint-config-21st.git"
   },
   "keywords": [
     "eslint",
