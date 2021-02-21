@@ -1,5 +1,5 @@
 {
-  "name": "@21st-digital/eslint-config-react",
+  "name": "@21st-digital/eslint-config",
   "version": "0.2.0",
   "description": "21st digital's ESLint config with Prettier support",
   "main": "index.js",
