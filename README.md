@@ -1,6 +1,6 @@
 # eslint-config-21st
 
-This package provides 21st digital's ESLint [Shareable Config](http://eslint.org/docs/developer-guide/shareable-configs) with support for Prettier for JavaScript. It is based on [JavaScript Standard Style](http://standardjs.com).
+This package provides 21st digital's ESLint [Shareable Config](http://eslint.org/docs/developer-guide/shareable-configs) with support for Prettier. It is based on [JavaScript Standard Style](http://standardjs.com).
 
 ## Install
 
@@ -49,6 +49,9 @@ You probably want your editor to lint and fix for you. Here are the instructions
 "[javascript]": {
   "editor.formatOnSave": false
 },
+"[javascriptreact]": {
+  "editor.formatOnSave": false
+},
 // show eslint icon at bottom toolbar
 "eslint.alwaysShowStatus": true,
 // tell the ESLint plugin to run on save
@@ -56,7 +59,7 @@ You probably want your editor to lint and fix for you. Here are the instructions
   "source.fixAll": true
 },
 // Optional BUT IMPORTANT: If you have the prettier extension enabled for other languages like CSS and HTML, turn it off for JS since we are doing it through Eslint already
-"prettier.disableLanguages": ["javascript"],
+"prettier.disableLanguages": ["javascript", "javascriptreact"],
 ```
 
 After attempting to lint your file for the first time, you may need to click on 'ESLint' in the bottom right and select 'Allow Everywhere' in the alert window.
