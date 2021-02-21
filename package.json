@@ -1,0 +1,48 @@
+{
+  "name": "eslint-config-21st",
+  "version": "1.0.0",
+  "description": "21st digital's ESLint config with Prettier support",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com:21stdigital/eslint-config-21st.git"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "config",
+    "javascript",
+    "ecmascript",
+    "lint",
+    "prettier"
+  ],
+  "author": {
+    "name": "Fabian Pahl",
+    "email": "fabian@21st.digital"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-config-standard": "^16.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^7.20.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-promise": "^4.3.1",
+    "prettier": "^2.2.1"
+  },
+  "peerDependencies": {
+    "eslint": "^7.20.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-promise": "^4.3.1",
+    "prettier": "^2.2.1"
+  }
+}
