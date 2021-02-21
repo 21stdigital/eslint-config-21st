@@ -9,7 +9,7 @@ This package provides 21st digital's ESLint [Shareable Config](http://eslint.org
 2. Then we need to install everything needed by the config:
 
 ```bash
-npx install-peerdeps --dev eslint-config-21st
+npx install-peerdeps --dev @21st-digital/eslint-config
 ```
 
 3. You can see in your package.json there are now a big list of devDependencies.
@@ -18,9 +18,7 @@ npx install-peerdeps --dev eslint-config-21st
 
 ```json
 {
-  "extends": [
-    "21st"
-  ]
+  "extends": ["@21st-digital"]
 }
 ```
 
@@ -43,23 +41,24 @@ You probably want your editor to lint and fix for you. Here are the instructions
 
 1. Install the [ESLint package](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 2. Now we need to setup some VS Code settings via `Code/File` → `Preferences` → `Settings`. It's easier to enter these settings while editing the `settings.json` file, so click the Open (Open Settings) icon in the top right corner:
-  ```js
-  // These are all my auto-save configs
-  "editor.formatOnSave": true,
-  // turn it off for JS and JSX, we will do this via eslint
-  "[javascript]": {
-    "editor.formatOnSave": false
-  },
-  // show eslint icon at bottom toolbar
-  "eslint.alwaysShowStatus": true,
-  // tell the ESLint plugin to run on save
-  "editor.codeActionsOnSave": {
-    "source.fixAll": true
-  },
-  // Optional BUT IMPORTANT: If you have the prettier extension enabled for other languages like CSS and HTML, turn it off for JS since we are doing it through Eslint already
-  "prettier.disableLanguages": ["javascript"],
-  ```
 
-After attempting to lint your file for the first time, you may need to click on 'ESLint' in the bottom right and select 'Allow Everywhere' in the alert window. 
+```js
+// These are all my auto-save configs
+"editor.formatOnSave": true,
+// turn it off for JS and JSX, we will do this via eslint
+"[javascript]": {
+  "editor.formatOnSave": false
+},
+// show eslint icon at bottom toolbar
+"eslint.alwaysShowStatus": true,
+// tell the ESLint plugin to run on save
+"editor.codeActionsOnSave": {
+  "source.fixAll": true
+},
+// Optional BUT IMPORTANT: If you have the prettier extension enabled for other languages like CSS and HTML, turn it off for JS since we are doing it through Eslint already
+"prettier.disableLanguages": ["javascript"],
+```
+
+After attempting to lint your file for the first time, you may need to click on 'ESLint' in the bottom right and select 'Allow Everywhere' in the alert window.
 
 Finally you'll usually need to restart VS code. They say you don't need to, but it's never worked for me until I restart.
