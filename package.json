@@ -1,6 +1,6 @@
 {
   "name": "@21st-digital/eslint-config",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "21st digital's ESLint config with Prettier support",
   "main": "index.js",
   "scripts": {
