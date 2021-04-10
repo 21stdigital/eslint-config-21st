@@ -1,4 +1,4 @@
-# eslint-config-21st
+# eslint-config-21st [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
 This package provides 21st digital's ESLint [Shareable Config](http://eslint.org/docs/developer-guide/shareable-configs) with support for Prettier. It is based on [JavaScript Standard Style](http://standardjs.com).
 

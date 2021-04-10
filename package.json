@@ -23,9 +23,11 @@
   },
   "main": "index.js",
   "scripts": {
+    "commit": "cz",
     "lint": "eslint .",
     "lint:fix": "eslint --fix",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "prepare": "husky install"
   },
   "dependencies": {
     "eslint-config-prettier": "^8.1.0",
@@ -35,6 +37,8 @@
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
+    "commitizen": "^4.2.3",
+    "cz-conventional-changelog": "^3.2.0",
     "eslint": "^7.24.0",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-jsx-a11y": "^6.4.1",
@@ -43,6 +47,7 @@
     "eslint-plugin-promise": "^4.3.1",
     "eslint-plugin-react": "^7.23.2",
     "eslint-plugin-react-hooks": "^4.2.0",
+    "husky": "^6.0.0",
     "prettier": "^2.2.1",
     "semantic-release": "^17.4.2"
   },
@@ -62,5 +67,15 @@
     "branches": [
       "main"
     ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
+    }
   }
 }
