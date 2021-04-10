@@ -2,12 +2,6 @@
   "name": "@21st-digital/eslint-config",
   "version": "0.0.0-development",
   "description": "21st digital's ESLint config with Prettier support",
-  "main": "index.js",
-  "scripts": {
-    "lint": "eslint .",
-    "lint:fix": "eslint --fix",
-    "semantic-release": "semantic-release"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/21stdigital/eslint-config-21st.git"
@@ -23,6 +17,16 @@
   ],
   "author": "Fabian Pahl <fabian@21st.digital>",
   "license": "MIT",
+  "homepage": "https://github.com/21stdigital/eslint-config-21st#readme",
+  "bugs": {
+    "url": "https://github.com/21stdigital/eslint-config-21st/issues"
+  },
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix",
+    "semantic-release": "semantic-release"
+  },
   "dependencies": {
     "eslint-config-prettier": "^8.1.0",
     "eslint-config-standard": "^16.0.2",
@@ -54,8 +58,9 @@
     "eslint-plugin-react-hooks": "^4.2.0",
     "prettier": "^2.2.1"
   },
-  "bugs": {
-    "url": "https://github.com/21stdigital/eslint-config-21st/issues"
-  },
-  "homepage": "https://github.com/21stdigital/eslint-config-21st#readme"
+  "release": {
+    "branches": [
+      "main"
+    ]
+  }
 }
