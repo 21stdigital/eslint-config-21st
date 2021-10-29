@@ -60,9 +60,7 @@ You probably want your editor to lint and fix for you. Here are the instructions
 // tell the ESLint plugin to run on save
 "editor.codeActionsOnSave": {
   "source.fixAll": true
-},
-// Optional BUT IMPORTANT: If you have the prettier extension enabled for other languages like CSS and HTML, turn it off for JS since we are doing it through Eslint already
-"prettier.disableLanguages": ["javascript", "javascriptreact"],
+}
 ```
 
 After attempting to lint your file for the first time, you may need to click on 'ESLint' in the bottom right and select 'Allow Everywhere' in the alert window.
